@@ -106,6 +106,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 50px 0;
+  position: relative;
 }
 .hero-text {
   max-width: 500px;
@@ -243,18 +244,26 @@ nav {
   width: 100%;
   height: auto;
 }
-.bg-bullets {
+.bg-bullets-start,
+.bg-bullets-end {
   position: absolute;
-  top: 50%;
   transform: translateY(-50%);
-  right: -20px;
-  width: 100px;
+  width: 70px;
   z-index: -1;
   @media (max-width: 768px) {
     display: none;
   }
 }
-.bg-bullets img {
+.bg-bullets-start {
+  top: 20%;
+  inset-inline-start: -50px;
+}
+.bg-bullets-end {
+  top: 50%;
+  inset-inline-end: -20px;
+}
+.bg-bullets-end img,
+.bg-bullets-start img {
   width: 100%;
   height: auto;
 }
