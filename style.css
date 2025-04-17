@@ -117,9 +117,10 @@ nav {
   margin-bottom: 20px;
 }
 .hero-text p {
-  font-size: 18px;
+  font-size: 21px;
   color: #8e8999;
   margin-bottom: 20px;
+  line-height: 32px;
 }
 .hero-text button {
   background-color: #458ff6;
